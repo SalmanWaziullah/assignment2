@@ -1,13 +1,18 @@
+/* =============
+     body style
+   ============= */
 body {
-    margin: 0;
-    padding:0;
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
-
 }
 .container {
   width: 1170px;
   margin: auto;
 }
+/* -==============
+    header style
+    ==============- */
 header {
   display: flex;
   justify-content: space-between;
@@ -27,3 +32,94 @@ header ul i {
   margin-left: 20px;
   margin-top: 5px;
 }
+/* ================
+   journy section
+   ================ */
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+.journy-info {
+  margin-top: 60px;
+}
+.journy-info h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+/* .journy-info p {
+  width: 400px;
+} */
+.journy-info i {
+  margin-left: 5px;
+  padding-top: 11px;
+}
+.journy-info a {
+  text-decoration: none;
+  background: #f6397feb;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: white;
+}
+.journy-img img {
+  max-width: 80%;
+  margin-left: 30px;
+}
+footer{
+    background: #0d0b2c;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    padding: 20px 0px;
+}
+/* ==================
+     responsive start 
+   ==================*/
+
+/* ========================responsive for mobile=================== */
+
+@media only screen and (max-width: 688px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat (1, 1fr);
+    justify-content: center;
+  }
+  header > h2 {
+    font-size: 3em;
+  }
+  header > nav {
+    display: none;
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .grid-item p{
+    text-align: center;
+    width: 430px;
+    margin-left: 110px;
+  }
+  .journy-info{margin-top: 0px;
+      margin-bottom: 50px;
+      text-align: center;
+
+  }
+  .footer-info{
+      width: 100%;
+  }
+}
+/* @media only screen and (min-width: 688px) and (max-width: 990px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat (100%, 2fr);
+    justify-content: center;
+  }
+  header > h2 {
+    font-size: 3em;
+  }
+  header > nav {
+    display: none;
+  }
+} */
