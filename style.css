@@ -25,6 +25,7 @@ body {
 header ul {
   display: flex;
   margin-top: 30px;
+  justify-content: center;
 }
 header ul li {
   list-style: none;
