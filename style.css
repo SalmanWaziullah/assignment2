@@ -1,5 +1,5 @@
 /* =============
-     body style
+    common body style
    ============= */
 body {
   margin: 0;
@@ -16,13 +16,13 @@ body {
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
 }
-/* -==============
-    header style
-    ==============- */
+/* -====================
+         header style
+    ====================- */
 .container nav {
   margin-left: 85px;
 }
-.container h2{
+.container h2 {
   margin-left: 40px;
 }
 header ul {
@@ -40,9 +40,9 @@ header ul i {
   margin-left: 20px;
   margin-top: 5px;
 }
-/* ================
-   journy section
-   ================ */
+/* ==================
+       journy section
+   ==================*/
 .grid-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -66,7 +66,6 @@ header ul i {
   padding: 5px 20px;
   border-radius: 20px;
   color: white;
-
 }
 .seemore-btn {
   float: right;
@@ -112,9 +111,9 @@ header ul i {
 }
 /* /////////////////glowing text //////////////// */
 
-/* ================
+/* ==================
    journy section end
-   ================ */
+   ================== */
 
 /* -------------------------------------------------- */
 
@@ -151,9 +150,9 @@ header ul i {
 
 /* -------------------------------------------------- */
 
-/* ================
+/* ====================
    bounas section start
-   ================ */
+   ==================== */
 .bounas-content img {
   width: 100%;
 }
@@ -180,9 +179,9 @@ footer {
   border-radius: 35%;
   background: gray;
 }
-/* ==================
-     responsive start 
-   ==================*/
+/* ===================================
+               responsive start 
+   ===================================*/
 
 /* ========================responsive for mobile=================== */
 
@@ -212,7 +211,7 @@ footer {
     font-weight: 500;
     font-size: 21px;
   }
-  .btn{
+  .btn {
     font-size: 30px;
   }
   .journy-img,
@@ -258,7 +257,9 @@ footer {
     font-size: 1em;
   }
 }
-/* ========================responsive for tab=================== */
+/* ======================== responsive for tab =================== */
+
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .container {
     display: grid;
@@ -285,8 +286,8 @@ footer {
   .btn {
     font-size: 25px;
   }
-  .journy-img{
-    width:80%;
+  .journy-img {
+    width: 80%;
   }
   .journy-info {
     width: 100%;
@@ -296,7 +297,8 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
   }
-  .single-collection,img{
+  .single-collection,
+  img {
     width: 85%;
     text-align: center;
   }
@@ -305,11 +307,11 @@ footer {
     font-size: 2em;
   }
 }
-@media only screen  and (min-width: 767px) and (max-width:1440px){
-  footer{
+@media only screen and (min-width: 767px) and (max-width: 1440px) {
+  footer {
     width: 1280px;
   }
-  .footer-info{
+  .footer-info {
     width: 100%;
   }
 }
