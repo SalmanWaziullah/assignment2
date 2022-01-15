@@ -22,6 +22,9 @@ body {
 .container nav {
   margin-left: 85px;
 }
+.container h2{
+  margin-left: 40px;
+}
 header ul {
   display: flex;
   margin-top: 30px;
@@ -47,6 +50,7 @@ header ul i {
 }
 .journy-info {
   margin-top: 60px;
+  padding-left: 40px;
 }
 .journy-info h1 {
   font-size: 40px;
@@ -250,7 +254,7 @@ footer {
   }
   footer {
     width: 1280px;
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 /* ========================responsive for tab=================== */
@@ -280,12 +284,27 @@ footer {
   .btn {
     font-size: 35px;
   }
-  .journy-img,
+  .journy-img{
+    width:80%;
+  }
   .journy-info {
     width: 100%;
+  }
+  .collection-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
   }
   footer {
     width: 1280px;
     font-size: 2em;
+  }
+}
+@media only screen  and (min-width: 767px) and (max-width:1440px){
+  footer{
+    width: 1280px;
+  }
+  .footer-info{
+    width: 100%;
   }
 }
