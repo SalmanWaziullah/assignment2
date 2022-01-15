@@ -6,17 +6,20 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+.section {
+  width: 1280px;
+  margin: auto;
+}
 .container {
-  width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: auto;
 }
 /* -==============
     header style
     ==============- */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
+.container nav {
+  margin-left: 85px;
 }
 header ul {
   display: flex;
@@ -47,30 +50,81 @@ header ul i {
   font-size: 40px;
   font-weight: 800;
 }
-/* .journy-info p {
-  width: 400px;
-} */
 .journy-info i {
   margin-left: 5px;
   padding-top: 11px;
 }
-.journy-info a {
+.btn {
   text-decoration: none;
   background: #f6397feb;
   padding: 5px 20px;
   border-radius: 20px;
   color: white;
 }
-.journy-img img {
-  max-width: 80%;
-  margin-left: 30px;
+.seemore-btn{
+  float: right;
+  padding-right: 50px;
+  padding-top: 10px;
 }
-footer{
-    background: #0d0b2c;
-    color: white;
-    text-align: center;
-    line-height: 15px;
-    padding: 20px 0px;
+.journy-img img {
+  width: 80%;
+  margin-left: 100px;
+}
+/* ================
+   journy section end
+   ================ */
+
+/* -------------------------------------------------- */
+
+/* ================
+   collection section start
+   ================ */
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  justify-items:center;
+}
+.popular-titel h2 {
+  font-size: 40px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #848282;
+  
+}
+.single-collection {
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px 4px lightgrey;
+  margin: 10px;
+  padding: 10px;
+  line-height: 15px;
+}
+.filled{
+  color: rgb(240, 240, 50);
+}
+/* ================
+   collection section start
+   ================ */
+footer {
+  margin-top: 50px;
+  background: #0d0b2c;
+  width: 100%;
+}
+.footer-info {
+  width: 100%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  padding: 50px 0px;
+}
+.footer-info>a {
+  color: white;
+  padding: 10px;
+  border-radius: 35%;
+  background: gray;
 }
 /* ==================
      responsive start 
@@ -78,48 +132,104 @@ footer{
 
 /* ========================responsive for mobile=================== */
 
-@media only screen and (max-width: 688px) {
-  header {
+@media only screen and (max-width: 576px) {
+  .container {
     display: grid;
-    grid-template-columns: repeat (1, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
-  header > h2 {
+  .container h2 {
     font-size: 3em;
   }
-  header > nav {
+  .container nav {
     display: none;
   }
-  .grid-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .popular-titel h2{
+    font-size: 65px;
+  }
+  .journy-info {
     margin-top: 0px;
-  }
-  .grid-item p{
+    margin-bottom: 50px;
     text-align: center;
-    width: 430px;
-    margin-left: 110px;
   }
-  .journy-info{margin-top: 0px;
-      margin-bottom: 50px;
-      text-align: center;
+  .journy-info p {
+    width: 53%;
+    margin-left: 275px;
+    font-weight: 500;
+    font-size: 21px;
+  }
+  .journy-img,
+  .journy-info {
+    width: 100%;
+  }
+  .collection-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+  }
+  .single-collection{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: 0 20px 20px 15px lightgray;
+  }
+    .single-collection img{
+      width: 80%;
+    grid-template-columns: repeat (1,1fr );
 
+    text-align: center;
   }
-  .footer-info{
-      width: 100%;
+  .single-collection h2{
+    font-size: 4em;
+  }
+  .single-collection i{
+    font-size: 50px;
+  }
+  .single-collection p,h4{
+    font-size: 3em;
+    line-height: 20px;
+  }
+  .seemore-btn{
+    font-size: 40px;
+    margin-right: 37%;
+  }
+  footer {
+    width: 1280px;
+    font-size: 2em;
+  }
+
+}
+/* ========================responsive for tab=================== */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .container h2 {
+    font-size: 3em;
+  }
+  .container nav {
+    display: none;
+  }
+  .journy-info {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .journy-info p {
+    width: 53%;
+    margin-left: 275px;
+    font-weight: 500;
+    font-size: 21px;
+  }
+  .journy-img,
+  .journy-info {
+    width: 100%;
+  }
+  footer {
+    width: 1280px;
+    font-size: 2em;
   }
 }
-/* @media only screen and (min-width: 688px) and (max-width: 990px) {
-  header {
-    display: grid;
-    grid-template-columns: repeat (100%, 2fr);
-    justify-content: center;
-  }
-  header > h2 {
-    font-size: 3em;
-  }
-  header > nav {
-    display: none;
-  }
-} */
