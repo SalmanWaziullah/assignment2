@@ -9,6 +9,7 @@ body {
 .section {
   width: 1280px;
   margin: auto;
+  padding-bottom: 50px;
 }
 .container {
   display: grid;
@@ -60,8 +61,9 @@ header ul i {
   padding: 5px 20px;
   border-radius: 20px;
   color: white;
+
 }
-.seemore-btn{
+.seemore-btn {
   float: right;
   padding-right: 50px;
   padding-top: 10px;
@@ -70,6 +72,40 @@ header ul i {
   width: 80%;
   margin-left: 100px;
 }
+
+/* /////////////////glowing text //////////////// */
+.glow {
+  display: none;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.journy-info:hover .glow {
+  display: block;
+}
+.journy-info:hover {
+  background: rgb(28, 22, 48);
+  color: white;
+  transition-duration: 0.4s ease;
+  padding-left: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+/* /////////////////glowing text //////////////// */
+
 /* ================
    journy section end
    ================ */
@@ -83,7 +119,7 @@ header ul i {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  justify-items:center;
+  justify-items: center;
 }
 .popular-titel h2 {
   font-size: 40px;
@@ -91,7 +127,6 @@ header ul i {
   margin-bottom: 60px;
   text-align: center;
   color: #848282;
-  
 }
 .single-collection {
   width: 300px;
@@ -101,11 +136,24 @@ header ul i {
   padding: 10px;
   line-height: 15px;
 }
-.filled{
+.filled {
   color: rgb(240, 240, 50);
 }
 /* ================
-   collection section start
+   collection section end
+   ================ */
+
+/* -------------------------------------------------- */
+
+/* ================
+   bounas section start
+   ================ */
+.bounas-content img {
+  width: 100%;
+}
+
+/* ================
+   footer section start
    ================ */
 footer {
   margin-top: 50px;
@@ -120,7 +168,7 @@ footer {
   line-height: 25px;
   padding: 50px 0px;
 }
-.footer-info>a {
+.footer-info > a {
   color: white;
   padding: 10px;
   border-radius: 35%;
@@ -144,7 +192,7 @@ footer {
   .container nav {
     display: none;
   }
-  .popular-titel h2{
+  .popular-titel h2 {
     font-size: 65px;
   }
   .journy-info {
@@ -158,47 +206,51 @@ footer {
     font-weight: 500;
     font-size: 21px;
   }
+  .btn{
+    font-size: 30px;
+  }
   .journy-img,
   .journy-info {
     width: 100%;
   }
-  .collection-container{
+  .collection-container {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
-  .single-collection{
+  .single-collection {
     text-align: center;
     width: 80%;
     margin: auto;
     margin-bottom: 60px;
     box-shadow: 0 20px 20px 15px lightgray;
   }
-    .single-collection img{
-      width: 80%;
-    grid-template-columns: repeat (1,1fr );
+  .single-collection img {
+    width: 80%;
+    grid-template-columns: repeat (1, 1fr);
 
     text-align: center;
   }
-  .single-collection h2{
+  .single-collection h2 {
     font-size: 4em;
   }
-  .single-collection i{
-    font-size: 50px;
+  .single-collection i {
+    font-size: 40px;
   }
-  .single-collection p,h4{
-    font-size: 3em;
+  .single-collection p,
+  h4 {
+    font-size: 2em;
     line-height: 20px;
   }
-  .seemore-btn{
+  .seemore-btn {
     font-size: 40px;
     margin-right: 37%;
+    margin-bottom: 30px;
   }
   footer {
     width: 1280px;
     font-size: 2em;
   }
-
 }
 /* ========================responsive for tab=================== */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -223,6 +275,9 @@ footer {
     margin-left: 275px;
     font-weight: 500;
     font-size: 21px;
+  }
+  .btn {
+    font-size: 35px;
   }
   .journy-img,
   .journy-info {
