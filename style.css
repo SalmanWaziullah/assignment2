@@ -170,10 +170,14 @@ footer {
   margin: auto;
   color: white;
   text-align: center;
-  line-height: 25px;
+  line-height: 10px;
   padding: 50px 0px;
 }
-.footer-info > a {
+.social-icon{
+  padding-top: 10px;
+}
+.social-icon a {
+  margin-top: 5px;
   color: white;
   padding: 10px;
   border-radius: 35%;
@@ -254,7 +258,7 @@ footer {
   }
   footer {
     width: 1280px;
-    font-size: 1em;
+    font-size: 2em;
   }
 }
 /* ======================== responsive for tab =================== */
